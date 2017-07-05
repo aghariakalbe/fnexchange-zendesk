@@ -66,7 +66,7 @@ class ZendeskPlugin(AbstractPlugin):
 				},
 				'elements': elements  # return the same thing back
 			}
-	'''def view_ticket(self,payload):#Working
+	def view_ticket(self,payload):#Working
 			headers = { 'Content-Type' : 'application/json' }
 			elements=payload["elements"]
 			ticket_id=str(elements[0]["ticket_id"])
